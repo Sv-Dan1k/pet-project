@@ -1,0 +1,13 @@
+{% extends 'user/userdef.html' %}
+
+{% block title %}Delete Quote{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Do you really want to remove the quote?</h1>
+        <form method="post">
+            {% csrf_token %}
+            <button class="del-quote" type="submit">Yes, remove the quote</button>
+        </form>
+    </div>
+{% endblock %}

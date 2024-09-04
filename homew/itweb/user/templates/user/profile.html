@@ -1,0 +1,11 @@
+{% extends 'user/userdef.html' %}
+
+{% block title %}Profile {{ user_profile.username }}{% endblock %}
+
+{% block content %}
+<div class="features">
+    <h1>Profile - {{ user_profile.username }}</h1>
+    <lip>Email: {{ user_profile.email }}</p>
+    <lip>Date of joining: {{ user_profile.date_joined }}</p>
+</div>
+{% endblock %}

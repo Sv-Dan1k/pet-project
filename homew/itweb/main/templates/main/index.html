@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'user/css/main.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css"> 
+</head>
+<body>
+    <aside>
+        <img src="{% static 'main/img/simple_logo.png' %}" alt="Logo">
+        <span class="logo">Authors</span>
+        <h3>Navigations</h3>
+        <ul>
+            {% if user.is_authenticated %}
+                <a href="{% url 'userhome' %}"><li><i class="fa-solid fa-house-chimney"></i> Home</li></a>
+                <a href="{% url 'usernews' %}"><li><i class="fa-solid fa-newspaper"></i> News</li></a>
+                <a href="{% url 'userauthors' %}"><li><i class="fa-solid fa-address-card"></i> Authors</li></a>
+                <a href="{% url 'userquotes' %}"><li><i class="fa-solid fa-book-open"></i> Quotes</li></a>
+                <a href="{% url 'logout' %}"><li2><i class="fa-solid fa-right-from-bracket"></i> Log out</li2></a>
+            {% else %}
+                <a href="{% url 'home' %}"><li><i class="fa-solid fa-house-chimney"></i> Home</li></a>
+                <a href="{% url 'news' %}"><li><i class="fa-solid fa-newspaper"></i> News</li></a>
+                <a href="{% url 'authors' %}"><li><i class="fa-solid fa-address-card"></i> Authors</li></a>
+                <a href="{% url 'quotes' %}"><li><i class="fa-solid fa-book-open"></i> Quotes</li></a>
+                <a href="{% url 'login' %}"><li2> Sign in</li2></a>
+                <a><li1> No account?</li1></a>
+                <a href="{% url 'create' %}"><li3> Create one!</li3></a>
+            {% endif %}
+        </ul>
+
+    </aside>
+    <main>
+        {% block content %}
+            <div class="features">
+                <h4>Welcome to Wi Authors</h4>
+                <ul1>
+                    <p2>Discover a world of knowledge and inspiration with <strong>Wi Authors</strong>.<br> 
+                        Our platform offers a rich collection of news and articles from verified authors, complete with publication dates and times. Dive into the biographies of notable authors—explore their birthplaces, life journeys, and remarkable achievements.<br>
+                        <br>
+                        Join our community by registering to unlock additional features: create and share your own news, edit existing content, and add quotes from your favorite authors. Enhance the site with your unique insights and become an integral part of the Wi Authors experience.
+                        <br>
+                        <br><strong>Thank you for visiting</strong>, and we look forward to your contributions!</p2>
+                </ul1>
+            </div>
+        {% endblock %}
+    </main>
+</body>
+</html>

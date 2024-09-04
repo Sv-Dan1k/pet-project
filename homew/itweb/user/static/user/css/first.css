@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: block;
+    height: 1000vh;
+}
+
+aside {
+    background-color: #181818;
+    color: #fff;
+    padding: 20px;
+    width: 250px;
+    text-align: left;
+    display: block;
+    flex-direction: column;
+    height: 250px;
+    width: 2400px;
+    border-bottom: 5px solid #4d4d4d;
+}
+
+aside img {
+    max-width: 140px;
+    margin-bottom: 0px;
+    margin-top: 75px;
+    margin-left: 500px;
+}
+
+aside .logo {
+    color: #fff;
+    display: block;
+    font-size: 75px;
+    float: left;
+    position: relative;
+    top: 60px;
+    left: 920px;
+}
+
+aside h3 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    position: relative;
+    left: 1000px;
+    display: flex;
+}
+
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+aside ul li {
+    color: #fff;
+    display: block;
+    font-size: 25px;
+    float: left;
+    position: relative;
+    top: 15px;
+    left: 70px;
+    transition: transform .6s ease;
+}
+
+
+
+aside ul li1 {
+    color: #fff;
+    display: block;
+    font-size: 23px;
+    float: left;
+    position: relative;
+    top: 15px;
+    left: 120px;
+    transition: transform .6s ease;
+}
+
+
+aside ul li1:hover, aside ul a:hover {
+    color: #086d83;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+
+aside ul a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+aside ul li:hover, aside ul a:hover {
+    color: #086d83;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+
+main {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    top: 500px;
+    max-width: 450px;
+    height: 480px;
+    margin-left: 760px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+
+form h2 {
+    position: relative;
+    left: 500px;
+    color: #343a40;
+}
+
+form .form-label {
+    font-weight: bold;
+    color: #343a40;
+    position: relative;
+    left: -105px;
+    top: 5px;
+    white-space: nowrap;
+}
+
+form .form-control {
+    border-radius: 5px;
+    width: 340px;
+    position: relative;
+    left: -125px;
+    border: 1px solid #ced4da;
+}
+
+form .btn-primary {
+    background-color: #343a40;
+    border-color: #343a40;
+    transition: background-color 0.3s ease;
+}
+
+form .btn-primary:hover {
+    background-color: #495057;
+    border-color: #495057;
+}
+
+form .btn-primary:active {
+    background-color: #23272b;
+    border-color: #1d2124;
+}
+
+
+li3 {
+    position: relative;
+    left: 50px;
+    top: -5px;
+}
+
+li1 {
+    position: relative;
+    left: -50px;
+    top: 20px;
+}
+
+
+
+.register-title {
+    margin-left: -10px;
+}
